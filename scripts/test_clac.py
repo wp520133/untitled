@@ -3,7 +3,8 @@ from page.page_clac import PageClac
 from parameterized import parameterized
 from tools.read_txt import read_txt
 from base.get_driver import GetDriver
-
+import pytest
+import allure
 
 class TestClac(unittest.TestCase):
     driver = None
@@ -18,9 +19,10 @@ class TestClac(unittest.TestCase):
         GetDriver().quit_driver()
 
     @parameterized.expand(read_txt("data.txt"))
+    @allure.step(title="计算")
     def test_add_clac(self, a, b):
         self.clac.page_add_clac(a, b)
 
 
 if __name__ == '__main__':
-    unittest.main()
+    pytest.main()
