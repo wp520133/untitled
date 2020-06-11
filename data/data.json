@@ -1,14 +1,17 @@
 {
   "data1": {
-    "a": 1,
-    "b": 2
+    "username": "wupeng",
+    "password": 123456,
+    "captcha_code": "sdfsd"
   },
   "data2": {
-    "a": 1234,
-    "b": 1232
+    "username": "wupeng1",
+    "password": 123456,
+    "captcha_code": "sdfsd"
   },
   "data3": {
-    "a": 1234,
-    "b": 1232
+    "username": "wupeng2",
+    "password": 123456,
+    "captcha_code": "sdfsd"
   }
 }
