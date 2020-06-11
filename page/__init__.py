@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-url = "http://192.168.102.30/"
+url = "http://192.168.58.1/"
 
 # 点击登录
 login_click = By.CSS_SELECTOR, "li.item:nth-child(7) > a:nth-child(1)"

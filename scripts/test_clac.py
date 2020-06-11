@@ -9,7 +9,6 @@ import allure
 
 class TestClac(unittest.TestCase):
     driver = None
-    str = "../data/data.txt"
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -20,7 +19,7 @@ class TestClac(unittest.TestCase):
     def tearDownClass(cls) -> None:
         GetDriver().quit_driver()
 
-    @parameterized.expand(read_txt(str))
+    @parameterized.expand(read_txt("data.txt"))
     def test_add_clac(self, username, password, captcha_code):
         self.clac.login(username, password, captcha_code)
 
