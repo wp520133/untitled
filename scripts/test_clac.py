@@ -21,7 +21,7 @@ class TestClac(unittest.TestCase):
         GetDriver().quit_driver()
 
     @parameterized.expand(read_txt("data.txt"))
-    def test_add_clac(self, username, password, captcha_code,success):
+    def test_add_clac(self, username, password, captcha_code, success):
         self.clac.login(username, password, captcha_code)
         if success:
             try:
@@ -39,10 +39,10 @@ class TestClac(unittest.TestCase):
                 # 获取不是登录成功的截图
                 self.clac.base_get_image()
         else:
-            msg=self.clac.page_login_username_null()
-            msg2=self.clac.page_login_password_null()
+            msg = self.clac.page_login_username_null()
+            msg2 = self.clac.page_login_password_null()
             try:
-                self.assertEqual(msg,"请输入会员登录名称！") or self.assertEqual(msg2,"请输入密码！")
+                self.assertEqual(msg, "请输入会员登录名称！") or self.assertEqual(msg2, "请输入密码！")
             except:
                 self.clac.base_get_image()
 
