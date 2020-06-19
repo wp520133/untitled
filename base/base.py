@@ -7,7 +7,7 @@ class Base:
         self.driver = driver
 
     # 查找元素方法
-    def base_find_element(self, loc, timeout=30, poll_frequency=0.5):
+    def base_find_element(self, loc, timeout=10, poll_frequency=0.5):
         return WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll_frequency).until(
             lambda x: x.find_element(*loc))
 

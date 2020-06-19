@@ -1,3 +1,2 @@
-,123456,sdfs,False
-wupeng1,,dsfsd,False
-wupeng2,123456,sdfs,True
+wupeng1,123456,dsfsd
+wupeng2,123456,sdfs

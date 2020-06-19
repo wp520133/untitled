@@ -1,17 +1,20 @@
 {
   "data1": {
-    "username": "wupeng",
-    "password": 123456,
-    "captcha_code": "sdfsd"
+    "username": "",
+    "password": "123456",
+    "captcha_code": "sdfsd",
+    "success": false
   },
   "data2": {
     "username": "wupeng1",
-    "password": 123456,
-    "captcha_code": "sdfsd"
+    "password": "",
+    "captcha_code": "sdf",
+    "success": false
   },
   "data3": {
     "username": "wupeng2",
-    "password": 123456,
-    "captcha_code": "sdfsd"
+    "password": "123456",
+    "captcha_code": "sdfsd",
+    "success": true
   }
 }

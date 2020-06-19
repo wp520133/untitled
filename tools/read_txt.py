@@ -1,5 +1,5 @@
 def read_txt(fileName):
-    filepath = "C:/Users/B/PycharmProjects/untitled/data/" + fileName
+    filepath = "C:/Users/17327/PycharmProjects/untitled/data/" + fileName
     arr = []
     with open(filepath, "r", encoding="utf-8") as file:
         datas = file.readlines()

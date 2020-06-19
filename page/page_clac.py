@@ -52,4 +52,5 @@ class PageClac(Base):
         self.page_login_password(password)
         self.page_login_captcha_code(captcha_code)
         self.page_login()
-        time.sleep(3)
+        self.page_login_out()
+
