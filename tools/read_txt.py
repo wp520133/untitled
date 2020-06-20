@@ -5,4 +5,8 @@ def read_txt(fileName):
         datas = file.readlines()
         for data in datas:
             arr.append(tuple(data.strip().split(",")))
+
+
+
+
     return arr
